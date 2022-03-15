@@ -1,7 +1,7 @@
 pipeline {
 
     //agent none
-    agent {label 'node1'}
+    agent {label 'Node1'}
     
     environment {
         PASS = credentials('registry-pass') 
@@ -46,7 +46,7 @@ pipeline {
         }
 
         stage('Deploy') {
-            //agent {label 'node1'}
+            //agent {label 'Node1'}
             steps {
                 sh './pipeline6/jenkins/deploy/deploy.sh'
             }
