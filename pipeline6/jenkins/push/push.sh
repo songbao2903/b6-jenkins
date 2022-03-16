@@ -4,7 +4,7 @@ echo "********************"
 echo "** Pushing image ***"
 echo "********************"
 
-IMAGE="mave-project"
+IMAGE="maven-project"
 
 echo "** Logging in ***"
 docker login -u nhuongtrieu -p $PASS
