@@ -7,4 +7,4 @@ echo $PASS >> /tmp/.auth
 #scp  /tmp/.auth root@192.168.100.10:/tmp/.auth
 scp  /tmp/.auth root@192.168.100.10:/tmp/.auth
 scp ./pipeline6/jenkins/deploy/publish root@192.168.100.10:/tmp/publish
-ssh root@192.168.100.10 "/tmp/publish"
+ssh root@192.168.100.10 "bash /tmp/publish"
